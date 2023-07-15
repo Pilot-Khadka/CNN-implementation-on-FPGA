@@ -1,7 +1,8 @@
-void convolution(int(*matrix)[5], int rows, int cols, int(*kernel)[3],int krows, int kcols,int (*result)[3])
+void convolution(int matrix [5][5], int kernel [3][3] ,int result[3][3])
 {
 	int i,j,m,n,ii,jj,mm,nn;
 	float out;
+	int rows=3,cols=3,kcols=3, krows=3;
 	int kCenterX = kcols / 2;
 	int kCenterY = krows / 2;
 
