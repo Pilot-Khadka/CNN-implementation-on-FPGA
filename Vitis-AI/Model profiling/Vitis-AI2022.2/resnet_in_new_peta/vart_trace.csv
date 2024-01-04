@@ -1,0 +1,18 @@
+HEADER
+VTF File Version,1.0
+VTF File Type,0
+PID,848
+Generated on,2021-11-19 17:24:30
+Resolution,ms
+Min Resolution,us
+Trace Version,1.0
+XRT Version,0.0.0
+Tool Version,2020.1
+
+STRUCTURE
+Group_Start,DPU
+Group_End,DPU
+
+MAPPING
+
+EVENTS

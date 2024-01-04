@@ -1,0 +1,70 @@
+Profile Summary
+Generated on: 2018-03-09 13:28:35
+Msec since Epoch: 1520602115008
+Profiled application: 
+Target platform: Xilinx
+Tool version: 2021.1
+XRT build version: 2.12.0
+Build version branch: 2021.2
+Build version hash: 2719b6027e185000fc49783171631db03fc0ef79
+Build version date: N/A
+Target devices: 
+Flow mode: System Run
+
+TITLE:HAL API Calls
+SECTION:API Calls,HAL API Calls
+COLUMN:<html>API Name</html>,string,Name of HAL XRT API,
+COLUMN:<html>Number<br>Of Calls</html>,int,Number of calls to API,
+COLUMN:<html>Total<br>Time (ms)</html>,float,Total execution time (in ms),
+COLUMN:<html>Minimum<br>Time (ms)</html>,float,Minimum execution time (in ms),
+COLUMN:<html>Average<br>Time (ms)</html>,float,Average execution time (in ms),
+COLUMN:<html>Maximum<br>Time (ms)</html>,float,Maximum execution time (in ms),
+ENTRY:xclAllocBO,61,27.3066,0.02155,0.447649,14.7316,
+ENTRY:xclClose,4,0.35014,0.03439,0.087535,0.14931,
+ENTRY:xclCloseContext,3,0.31017,0.03624,0.10339,0.21726,
+ENTRY:xclExecBuf,56,0.99595,0.0152,0.0177848,0.08061,
+ENTRY:xclExecWait,55,37.8064,0.13371,0.687389,1.44762,
+ENTRY:xclFreeBO,61,6.86506,0.02052,0.112542,4.66622,
+ENTRY:xclGetBOProperties,59,0.43557,0.00653,0.00738254,0.01809,
+ENTRY:xclLoadXclbin,1,267.702,267.702,267.702,267.702,
+ENTRY:xclLockDevice,1,0.01081,0.01081,0.01081,0.01081,
+ENTRY:xclMapBO,61,1.44897,0.01438,0.0237536,0.20162,
+ENTRY:xclOpen,4,0.32957,0.03839,0.0823925,0.19134,
+ENTRY:xclOpenContext,3,0.19443,0.03396,0.06481,0.12115,
+ENTRY:xclProbe,7,0.68503,0.03956,0.0978614,0.25449,
+ENTRY:xclSyncBO,117,5.51065,0.00778,0.0470996,2.08362,
+
+Guidance Parameters
+Parameter,Element,Value,
+PLRAM_DEVICE,all,0,
+HBM_DEVICE,all,0,
+KDMA_DEVICE,all,0,
+P2P_DEVICE,all,0,
+TRACE_MEMORY,all,FIFO,
+APPLICATION_RUN_TIME_MS,all,3146.43,
+XRT_INI_SETTING,profile,0,Profiling (deprecated)
+XRT_INI_SETTING,opencl_summary,0,Generation of OpenCL summary report
+XRT_INI_SETTING,opencl_device_counter,0,Hardware counters added to OpenCL summary file
+XRT_INI_SETTING,timeline_trace,0,Timeline trace (deprecated)
+XRT_INI_SETTING,native_xrt_trace,0,Generation of Native XRT API function trace
+XRT_INI_SETTING,xrt_trace,0,Generation of hardware SHIM function trace
+XRT_INI_SETTING,xrt_profile,1,Equivalent to xrt_trace (deprecated)
+XRT_INI_SETTING,data_transfer_trace,off,Collection of data from PL monitors and added to summary and trace
+XRT_INI_SETTING,power_profile,0,Polling of power data during execution of application
+XRT_INI_SETTING,power_profile_interval_ms,20,Interval for reading power data (in ms)
+XRT_INI_SETTING,stall_trace,off,Enables hardware generation of stalls in compute units
+XRT_INI_SETTING,trace_buffer_size,1M,Size of buffer to allocate for trace (memory offload only)
+XRT_INI_SETTING,verbosity,4,Verbosity level
+XRT_INI_SETTING,continuous_trace,0,Continuous offloading of trace from memory to host
+XRT_INI_SETTING,continuous_trace_interval_ms,10,Interval for offloading trace (in ms; deprecated)
+XRT_INI_SETTING,trace_buffer_offload_interval_ms,10,Interval for reading of device data to host (in ms)
+XRT_INI_SETTING,lop_trace,0,Generation of lower overhead OpenCL trace. Should not be used with other OpenCL options.
+XRT_INI_SETTING,debug_mode,batch,Debug mode (emulation only)
+XRT_INI_SETTING,aie_trace,0,Generation of AI Engine trace
+XRT_INI_SETTING,aie_trace_buffer_size,8M,Size of buffer to allocate for AI Engine trace
+XRT_INI_SETTING,aie_trace_metrics,functions,Configuration level used for AI Engine trace
+XRT_INI_SETTING,aie_profile,0,Generation of AI Engine profiling
+XRT_INI_SETTING,aie_profile_interval_us,1000,Interval for reading AI Engine profile counters (in us)
+XRT_INI_SETTING,aie_profile_core_metrics,heat_map,Metric set for AI Engine core modules
+XRT_INI_SETTING,aie_profile_memory_metrics,conflicts,Metric set for AI Engine memory modules
+XRT_INI_SETTING,vitis_ai_profile,1,Generation of Vitis AI summary and trace (Vitis AI designs only)
